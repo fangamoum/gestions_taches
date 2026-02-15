@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('titre');
             $table->text('description')->nullable();
-            $table->boolean('statue')->default(false);
+            $table->string('priorite')->default('moyenne');
+            $table->boolean('statue')->default('en_cour');
             $table->timestamps();
         });
     }

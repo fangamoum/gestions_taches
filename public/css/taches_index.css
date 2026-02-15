@@ -1,0 +1,53 @@
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.task-table th,
+.task-table td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.task-table th {
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: 600;
+}
+
+.task-table tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+.priority {
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Couleurs selon la priorité */
+.priority.faible {
+    background-color: #10b981; /* vert */
+}
+.priority.moyenne {
+    background-color: #f59e0b; /* orange */
+}
+.priority.haute {
+    background-color: #ef4444; /* rouge */
+}
+
+/* Boutons d’action */
+.btn-action {
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.btn-action.edit { color: #2563eb; }
+.btn-action.delete { color: #ef4444; }
